@@ -4,7 +4,9 @@ import com.marcioos.garagesale.dao.ItemDAO;
 import com.marcioos.garagesale.health.TemplateHealthCheck;
 import com.marcioos.garagesale.resources.ItemResource;
 import io.dropwizard.Application;
+import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.jdbi.DBIFactory;
+import io.dropwizard.migrations.MigrationsBundle;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
 import org.skife.jdbi.v2.DBI;
@@ -22,6 +24,12 @@ public class GarageSaleApplication extends Application<GarageSaleConfiguration> 
 
     @Override
     public void initialize(Bootstrap<GarageSaleConfiguration> bootstrap) {
+        bootstrap.addBundle(new MigrationsBundle<GarageSaleConfiguration>() {
+            @Override
+            public DataSourceFactory getDataSourceFactory(GarageSaleConfiguration garageSaleConfiguration) {
+                return garageSaleConfiguration.getDatabase();
+            }
+        });
 
     }
 
