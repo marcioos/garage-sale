@@ -30,7 +30,6 @@ public class GarageSaleApplication extends Application<GarageSaleConfiguration> 
                 return garageSaleConfiguration.getDatabase();
             }
         });
-
     }
 
     @Override

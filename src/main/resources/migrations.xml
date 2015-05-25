@@ -23,4 +23,7 @@
             </column>
         </createTable>
     </changeSet>
+    <changeSet id="2" author="marcio">
+        <loadData file="data/items.csv" tableName="item"/>
+    </changeSet>
 </databaseChangeLog>
