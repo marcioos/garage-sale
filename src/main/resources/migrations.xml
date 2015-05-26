@@ -6,6 +6,7 @@
         xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
          http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
 
+    <!-- Create ITEM table -->
     <changeSet id="1" author="marcio">
         <createTable tableName="item">
             <column name="id" type="bigint" autoIncrement="true">
@@ -23,6 +24,8 @@
             </column>
         </createTable>
     </changeSet>
+
+    <!-- Load items from csv file -->
     <changeSet id="2" author="marcio">
         <loadData file="data/items.csv" tableName="item"/>
     </changeSet>

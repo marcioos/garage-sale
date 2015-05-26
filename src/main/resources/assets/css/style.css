@@ -1,0 +1,11 @@
+ul {
+    list-style-type: none;
+}
+
+.item-container {
+    margin-bottom: 2em;
+}
+
+body {
+    padding-top: 70px;
+}

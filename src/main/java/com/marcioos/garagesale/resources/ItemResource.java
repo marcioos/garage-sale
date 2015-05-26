@@ -2,16 +2,14 @@ package com.marcioos.garagesale.resources;
 
 import com.codahale.metrics.annotation.Timed;
 import com.marcioos.garagesale.dao.ItemDAO;
-import com.marcioos.garagesale.model.Item;
+import com.marcioos.garagesale.views.ItemsView;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.MediaType;
-import java.util.Collection;
 
 @Path("/")
-@Produces(MediaType.APPLICATION_JSON)
+@Produces("text/html; charset=utf-8")
 public class ItemResource {
 
     private final ItemDAO itemDAO;
@@ -22,7 +20,7 @@ public class ItemResource {
 
     @GET
     @Timed
-    public Collection<Item> listItems() {
-        return itemDAO.list();
+    public ItemsView listItems() {
+        return new ItemsView(itemDAO.list());
     }
 }
