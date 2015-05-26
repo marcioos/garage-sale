@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar target/garage-sale-0.0.1-SNAPSHOT.jar db migrate garage-sale.yml && java $JAVA_OPTS -Ddw.server.connector.port=$PORT -jar target/garage-sale-0.0.1-SNAPSHOT.jar server garage-sale.yml
