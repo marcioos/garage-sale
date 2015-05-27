@@ -1,3 +1,15 @@
-id,name,price,description,picture
-1,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg"
-2,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg"
+id,name,price,description,picture,category
+1,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg","Livros"
+2,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg","Livros"
+3,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg","Livros"
+4,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg","Livros"
+5,"O Livro da Filosofia","R$ 20.00","http://www.saraiva.com.br/o-livro-da-filosofia-3678158.html","http://img.submarino.com.br/produtos/01/00/item/110103/2/110103254GG.jpg","Livros"
+6,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg","HQs"
+7,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg","HQs"
+8,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg","HQs"
+9,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg","HQs"
+10,"Preacher","R$ 200.00","Coleção completa, em inglês","http://cdn.bleedingcool.net/wp-content/uploads/2013/07/PreacherCover.jpg","HQs"
+11,"Last Night on Earth","R$ 120.00","com expansões bla bla bla","https://cf.geekdo-images.com/images/pic207777.jpg","Jogos"
+12,"Last Night on Earth","R$ 120.00","com expansões bla bla bla","https://cf.geekdo-images.com/images/pic207777.jpg","Jogos"
+13,"Last Night on Earth","R$ 120.00","com expansões bla bla bla","https://cf.geekdo-images.com/images/pic207777.jpg","Jogos"
+14,"Last Night on Earth","R$ 120.00","com expansões bla bla bla","https://cf.geekdo-images.com/images/pic207777.jpg","Jogos"

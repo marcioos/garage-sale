@@ -1,6 +1,6 @@
 package com.marcioos.garagesale.dao;
 
-import com.marcioos.garagesale.model.Item;
+import com.marcioos.garagesale.core.model.Item;
 import org.skife.jdbi.v2.sqlobject.SqlQuery;
 import org.skife.jdbi.v2.sqlobject.customizers.RegisterMapper;
 

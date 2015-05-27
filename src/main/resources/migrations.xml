@@ -22,6 +22,9 @@
             <column name="picture" type="varchar(255)">
                 <constraints nullable="false"/>
             </column>
+            <column name="category" type="varchar(100)">
+                <constraints nullable="false"/>
+            </column>
         </createTable>
     </changeSet>
 

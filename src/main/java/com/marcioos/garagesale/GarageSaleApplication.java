@@ -1,7 +1,7 @@
 package com.marcioos.garagesale;
 
+import com.marcioos.garagesale.core.helper.ItemsByCategoryHelper;
 import com.marcioos.garagesale.dao.ItemDAO;
-import com.marcioos.garagesale.health.TemplateHealthCheck;
 import com.marcioos.garagesale.resources.ItemResource;
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
@@ -39,12 +39,14 @@ public class GarageSaleApplication extends Application<GarageSaleConfiguration> 
     @Override
     public void run(GarageSaleConfiguration garageSaleConfiguration,
                     Environment environment) throws Exception {
-        final DBIFactory factory = new DBIFactory();
-        final DBI jdbi = factory.build(environment, garageSaleConfiguration.getDatabase(), "h2");
+        final DBI jdbi = createDBI(garageSaleConfiguration, environment);
         final ItemDAO itemDAO = jdbi.onDemand(ItemDAO.class);
-        final ItemResource resource = new ItemResource(itemDAO);
-        final TemplateHealthCheck healthCheck = new TemplateHealthCheck();
-        environment.healthChecks().register("template", healthCheck);
+        final ItemResource resource = new ItemResource(itemDAO, new ItemsByCategoryHelper());
         environment.jersey().register(resource);
+    }
+
+    private DBI createDBI(GarageSaleConfiguration garageSaleConfiguration, Environment environment) {
+        final DBIFactory factory = new DBIFactory();
+        return factory.build(environment, garageSaleConfiguration.getDatabase(), "h2");
     }
 }

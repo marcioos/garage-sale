@@ -15,7 +15,7 @@
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
     </head>
-    <body>
+    <body data-spy="scroll" data-target="#navbar-links">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -32,24 +32,31 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-links">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Todos <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Livros</a></li>
-                        <li><a href="#">HQs</a></li>
+                        {{#categories}}
+                            <li><a href="#{{category}}">{{category}}</a></li>
+                        {{/categories}}
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Contato</a></li>
                     </ul>
-                </div><!-- /.navbar-collapse -->
-            </div><!-- /.container -->
+                </div>
+            </div>
         </nav>
 
         <div class="container">
             <ul>
-                {{#items}}
-                    <li>
-                        {{> item}}
-                    </li>
-                {{/items}}
+                {{#categories}}
+                    <div id="{{category}}">
+                        <span>{{category}}</span>
+                        <ul>
+                            {{#items}}
+                                <li>
+                                    {{> item}}
+                                </li>
+                            {{/items}}
+                        </ul>
+                    </div>
+                {{/categories}}
             </ul>
         </div>
 
