@@ -44,20 +44,19 @@
         </nav>
 
         <div class="container">
-            <ul>
-                {{#categories}}
-                    <div id="{{category}}">
-                        <span>{{category}}</span>
-                        <ul>
-                            {{#items}}
-                                <li>
-                                    {{> item}}
-                                </li>
-                            {{/items}}
-                        </ul>
-                    </div>
-                {{/categories}}
-            </ul>
+            {{#categories}}
+                <h1><small>{{category}}</small></h1>
+                <div id="{{category}}" class="list-group">
+                    {{#items}}
+                        <div class="list-group-item">
+                            {{> item}}
+                        </div>
+                    {{/items}}
+                </div>
+            {{/categories}}
+            <div class="footer">
+                <img src="/assets/img/sweden.png" alt="swedish flag">
+            </div>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
