@@ -32,4 +32,11 @@
     <changeSet id="2" author="marcio">
         <loadData file="data/items.csv" tableName="item"/>
     </changeSet>
+
+    <!-- delete books of magic -->
+    <changeSet author="liquibase-docs" id="delete-example">
+        <delete tableName="item">
+            <where>id = 7</where>
+        </delete>
+    </changeSet>
 </databaseChangeLog>
