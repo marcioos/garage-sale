@@ -34,7 +34,7 @@
     </changeSet>
 
     <!-- delete books of magic -->
-    <changeSet author="liquibase-docs" id="delete-example">
+    <changeSet id="3" author="marcio">
         <delete tableName="item">
             <where>id = 7</where>
         </delete>
