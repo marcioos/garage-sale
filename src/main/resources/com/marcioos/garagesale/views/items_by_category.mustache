@@ -5,9 +5,10 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Garage Sale</title>
+        <title>Mudança do Márcio</title>
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/assets/css/navbar.css">
         <link rel="stylesheet" href="/assets/css/style.css">
 
         <!--[if lt IE 9]>
@@ -26,7 +27,9 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Garage Sale</a>
+                    <a class="navbar-brand" href="#">
+                        <span class="glyphicon glyphicon-tags"> </span> Mudança do Márcio
+                    </a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,7 +40,13 @@
                         {{/categories}}
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Contato</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Contato <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a target="_blank" href="https://www.facebook.com/marciottlg">Facebook</a></li>
+                                <li><a target="_top" href="mailto:mudancadomarcio@gmail.com">mudancadomarcio@gmail.com</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -57,6 +66,7 @@
             <div class="footer">
                 <img src="/assets/img/sweden.png" alt="swedish flag">
             </div>
+            <footer class="sales-footer">Desenvolvido por <a href="https://twitter.com/marcio_os">Márcio Oliveira</a>, em Porto Alegre, Brasil.</footer>
         </div>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

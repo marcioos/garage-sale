@@ -1,12 +1,20 @@
 <div class="row">
-    <div class="col-sm-3">
-        <img src="{{picture}}" alt="{{name}}" class="item-picture">
+    <div class="col-sm-3 item-picture-container">
+        <div>
+            <img src="https://s3-sa-east-1.amazonaws.com/mudancadomarcio/{{picture}}" alt="{{name}}" class="item-picture">
+        </div>
+        <div>
+            <a target="_blank" href="https://s3-sa-east-1.amazonaws.com/mudancadomarcio/hd/{{picture}}" class="hd-picture-link">
+                <span class="glyphicon glyphicon-zoom-in" aria-hidden="true"></span>
+                <small>Ver foto em alta resolução</small>
+            </a>
+        </div>
     </div>
     <div class="col-sm-6">
         <div><h3>{{name}}</h3></div>
         <div>{{{description}}}</div>
     </div>
     <div class="col-sm-3 vertically-centered item-price">
-        <h3>{{price}}</h3>
+        <h4>{{price}}</h4>
     </div>
 </div>
