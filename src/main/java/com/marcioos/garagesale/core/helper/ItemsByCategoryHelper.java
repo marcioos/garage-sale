@@ -21,12 +21,7 @@ public class ItemsByCategoryHelper {
 
     private static Map<String, Collection<Item>> createCategoryMap(Collection<Item> items) {
         Map<String, Collection<Item>> categoryMap = new HashMap<>();
-        Collection<Item> outrosCategory = new ArrayList<>();
         for (Item item : items) {
-            if (item.getCategory().equals("Outros")) {
-                outrosCategory.add(item);
-                continue;
-            }
             if (categoryMap.containsKey(item.getCategory())) {
                 categoryMap.get(item.getCategory()).add(item);
             } else {
@@ -35,7 +30,6 @@ public class ItemsByCategoryHelper {
                 categoryMap.put(item.getCategory(), categoryItems);
             }
         }
-        categoryMap.put("Outros", outrosCategory);
         return categoryMap;
     }
 }
