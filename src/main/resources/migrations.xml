@@ -39,4 +39,86 @@
             <where>id = 7</where>
         </delete>
     </changeSet>
+
+    <!-- Reservations -->
+    <!-- Joker -->
+    <changeSet id="4" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 6</where>
+        </update>
+    </changeSet>
+
+    <!-- Kenshin -->
+    <changeSet id="5" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 8</where>
+        </update>
+    </changeSet>
+
+    <!-- Camera -->
+    <changeSet id="6" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 25</where>
+        </update>
+    </changeSet>
+
+    <!-- O Senhor da Foice -->
+    <changeSet id="7" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 12</where>
+        </update>
+    </changeSet>
+
+    <!-- Estranhas irmas -->
+    <changeSet id="8" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 13</where>
+        </update>
+    </changeSet>
+
+    <!-- Teclado Apple -->
+    <changeSet id="9" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 27</where>
+        </update>
+    </changeSet>
+
+    <!-- Magic Mouse -->
+    <changeSet id="10" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 28</where>
+        </update>
+    </changeSet>
+
+    <!-- Game Boy -->
+    <changeSet id="11" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 22</where>
+        </update>
+    </changeSet>
+
+    <!-- Raquete -->
+    <changeSet id="12" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 33</where>
+        </update>
+    </changeSet>
+
+    <!-- Monitor -->
+    <changeSet id="13" author="marcio">
+        <update tableName="item">
+            <column name="price" value="reservado"/>
+            <where>id = 26</where>
+        </update>
+    </changeSet>
+
 </databaseChangeLog>
